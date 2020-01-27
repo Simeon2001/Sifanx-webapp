@@ -1,0 +1,27 @@
+{% extends 'sifanx/base.html' %}
+{% block title %} <title>Sifanx Testimonial </title> {% endblock %}
+
+{% block content %}
+<div class = "king">
+    <div class = "row">
+        <div class = "col-sm-12 col-md-7">
+            <div class ="panel panel-default">
+                <div class ="panel body">
+                    <h2 class="ya">Write A Testimonial About The Work Sifanx As Done For You<br>Not Compulsory To Drop a pictures or images</h2>
+                    <div class="container-fluid">
+                        <form class ="form-horizontal" action=" " method ="post" enctype = "multipart/form-data">
+                            {% csrf_token %}
+                            {% include 'sifanx/form-template.html' %}
+                            <div class ="form-group">
+                                <div class ="col-sm-offset2-2 col-sm-10">
+                        </form>
+                                    <button type ="submit" class="btn-success">submit</button> 
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

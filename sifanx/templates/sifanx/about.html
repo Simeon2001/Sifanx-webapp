@@ -1,0 +1,39 @@
+{% extends 'sifanx/base.html' %}
+{% load static %}
+{% block title %}<title>Learn About Sifanx</title>{% endblock %}
+
+{% block content %}
+
+    <!-- Top bar -->
+    <div class="top-bar">
+        <h1>About Us</h1>
+        <p><a href="#">Home</a> / About me</p>
+    </div>
+    <!-- end Top bar -->
+
+    <!-- Main container -->
+    <div class="container main-container clearfix">
+        <div class="col-md-6">
+            <img src="{% static 'sifanx/img/02.jpg" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-6">
+            <h3 class="uppercase">About Me </h3>
+            <h5>Creativity</h5>
+            <div class="h-30"></div>
+            <p>Sifanx is dedicated to creation of high quality designs with the use of graphics tools that gives u the taste of design you want </p>
+
+            <!--<p>Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? Esse enim quam vellet iniquus iustus poterat inpune. </p>-->
+            <div class="h-10"></div>
+            <ul class="social-ul">
+                <li class="box-social"><a href="https://m.facebook.com/pages/category/Product-Service/Sifanx-official-285635192213269/"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="https://www.instagram.com/alex_sifanx/?hl=en"><i class="ion-social-instagram-outline"></i></a></li>
+                <!--<li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+            </ul>-->
+
+
+        </div>
+    </div>
+    <!-- end Main container -->
+{% endblock %}
+

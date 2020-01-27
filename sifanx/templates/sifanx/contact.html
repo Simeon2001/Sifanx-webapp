@@ -1,0 +1,41 @@
+{% extends 'sifanx/base.html' %}
+{% block content %}
+
+    <!-- top bar -->
+    <div class="top-bar">
+        <h1>Testimonials</h1>
+        <p><a href="{% url 'Home'  %}">Home</a> / testimonial</p>
+    </div>
+    <!-- end top bar -->
+
+    <!-- main-container -->
+    <div class="container main-container">
+        <div class="col-md-6">
+            <form action="{% url 'testimonial' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="exampleInputName">Name</label>
+                    <input type="Name" class="form-control" id="exampleInputName" aria-describedby="NameHelp" placeholder="Enter Your Name">
+                    <small id="NameHelp" class="form-text text-muted">input your name</small>
+                </div>
+                <div class="form-group">
+                    <label for="examplecomment1">comment</label>
+                    <textarea name="comment" type="comment" class="form-control" id="exampleInputcomment1" placeholder="Comment About Our Work">
+                    <small id="commentHelp" class="form-text text-muted">Comment About Our Work,We Need Your Recommendation</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleimage">image</label>
+                    <input name="images" type="file" class="form-control" id="exampleInputimage">
+                    <small id="imageHelp" class="form-text text-muted">Upload Your Picture but not compulsory</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div
+    <div class="col-md-6">
+        <!--<h3 class="text-uppercase">contact me</h3>-->
+        <h5>Testimonial about sifanx</h5>
+        <div class="h-30"></div>
+        <p>we would like to see your comments or testimonial about sifanx works </p>
+    </div>
+{% endblock %}
