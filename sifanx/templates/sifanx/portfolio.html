@@ -4,11 +4,11 @@
 {% block title %}<title>Sifanx Gallery</title>{% endblock %}
 {% block content %}
 
-<div class="carousel-inner" role="listbox">
+<div class="carousel-inner gid" role="listbox">
     {% for agent in p %}
     <!-- item -->
         <div class="carousel-item text-center text-light mb-5 {% if forloop.first %} active{% endif %}">
-            <img src="{{ agent.img.url }}" class="img-fluid rounded-circle mb-3" width="150">
+            <img src="{{ agent.img.url }}" class="img-fluid rounded-circle mb-3 imgb" width="150">
             <p class="px-3-p">{{ agent.typ }}</p>
         </div>
     <!-- end item -->
