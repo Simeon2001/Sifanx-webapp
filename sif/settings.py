@@ -25,7 +25,7 @@ SECRET_KEY = 'kal95vh#*ot=v0!ez*e@8tcik!xd&#0@o@1jg3xwr)l-b^_t$$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','sifanx.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','simmsg.herokuapp.com']
 
 
 # Application definition
